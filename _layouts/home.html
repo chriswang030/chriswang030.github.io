@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<header>
+  <h1>{{ site.title }}</h1>
+  <div style="width:100%; display: flex">
+    <img src="profile.JPG" style="width: 40%; height: auto; margin-left: 0 !important"
+        alt="profile picture"/>
+  </div>
+  {%-if site.theme_config.show_description-%}
+    <p>{{ site.description }}</p>
+  {%-endif-%}
+  <p>
+    I am a PhD student in mathematics at Cornell University. My primary research
+    interest is the numerical analysis of PDEs. My advisor is 
+    <a href="https://pi.math.cornell.edu/~ajt/">Alex Townsend</a>. Before Cornell,
+    I was an undergraduate at Columbia University. I am supported by the NSF GRFP.
+  </p>
+  <p>
+    In the spring of 2024, I will be visiting ICERM for the
+    <a href="https://icerm.brown.edu/programs/sp-s24/">semester program in
+    numerical PDEs</a>.
+  </p>
+</header>
+
+{%-include menu_item.html collection=site.data.menu.entries-%}
+
+{{ content }}

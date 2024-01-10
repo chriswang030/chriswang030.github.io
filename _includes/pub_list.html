@@ -1,0 +1,27 @@
+{%-assign pubs = site.posts-%}
+
+{%-if include.limit and posts.size > include.limit-%}
+  {%-assign limit_exceeded = true-%}
+{%-else-%}
+  {%-assign limit_exceeded = false-%}
+{%-endif-%}
+
+{%- if pubs.size > 0 -%}
+  <ol>
+    {%- for pub in pubs limit: include.limit -%}
+        <li>
+            <span>{{ pub.title }}</span>
+            {%- if pub.with and pub.with.size > 0 -%}
+            <span> (with&nbsp;
+            {%- for auth in pub.with -%}{{ auth }}{% unless forloop.last %}, {% endunless %}{% endfor %})</span>{% endif %},
+            {% if pub.submitted %}<span> submitted</span>{% elsif pub.journal %}<em>{{ pub.journal }}</em>{% endif %}.
+            {% if pub.arxiv %}
+              <span>[<a href="{{ pub.arxiv | absolute_url }}">arXiv</a>]</span>
+            {% endif %}
+        </li>
+    {%- endfor -%}
+    {%- if include.show_more and limit_exceeded -%}
+      <li><a href="{{ include.show_more_url }}">{{ include.show_more_text | default: "Show more..." }}</a></li>
+    {%- endif -%}
+  </ol>
+{%- endif -%}

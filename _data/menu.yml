@@ -1,0 +1,28 @@
+# For documentation on this file, see:
+# https://github.com/riggraz/no-style-please#customize-the-menu
+
+entries:
+  - title: CV
+    url: CV.pdf
+
+  - title: "email: cyw33 at cornell dot edu"
+
+  - title: research
+    pub_list:
+      limit: 10
+      show_more: true
+      show_more_url: publications.html
+
+  - title: teaching
+    entries:
+      - title: "MATH 4061: Intro to Modern Analysis I, Columbia, Spring 2022 (TA)"
+      - title: "MATH 1011: Calculus I, Columbia, Fall 2021 (TA)"
+
+  - title: service
+    entries:
+      - title: "I am an outreach co-chair for <a href='https://pi.math.cornell.edu/~awm/index.html'>Cornell AWM</a> and helped organize the 2023 Cornell Julia Robinson Math Festival"
+      - title: "In 2022, I mentored research projects on data-driven recovery of Green's functions as part of the <a href='https://math.cornell.edu/history-reu-and-spur-summer-program-undergraduate-research-programs'>Cornell Summer REU</a>"
+      - title: "I volunteer occasionally with the <a href='https://pi.math.cornell.edu/~zakh/little/'>Cornell Little Math Circle</a> and with the <a href='https://sites.google.com/cornell.edu/cornell-drp'>directed reading program</a>"
+
+  - title: miscellaneous
+    url: misc
