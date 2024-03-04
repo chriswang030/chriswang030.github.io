@@ -14,9 +14,13 @@
             {%- if pub.with and pub.with.size > 0 -%}
             <span> (with&nbsp;
             {%- for auth in pub.with -%}{{ auth }}{% unless forloop.last %}, {% endunless %}{% endfor %})</span>{% endif %},
-            {% if pub.submitted %}<span> submitted</span>{% elsif pub.journal %}<em>{{ pub.journal }}</em>{% endif %}.
+            {% if pub.submitted %}<span> submitted</span>{% elsif pub.journal %}<em>{{ pub.journal }}</em>{% endif %}
+            {% if pub.toappear %}<span>, to appear</span>{% endif %}.
             {% if pub.arxiv %}
               <span>[<a href="{{ pub.arxiv | absolute_url }}">arXiv</a>]</span>
+            {% endif %}
+            {% if pub.journallink %}
+              <span>[<a href="{{ pub.journallink | absolute_url }}">journal</a>]</span>
             {% endif %}
         </li>
     {%- endfor -%}
