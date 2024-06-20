@@ -20,9 +20,15 @@ entries:
 
   - title: service
     entries:
-      - title: "I am an outreach co-chair for <a href='https://pi.math.cornell.edu/~awm/index.html'>Cornell AWM</a> and helped organize the 2023 and 2024 Cornell Julia Robinson Math Festivals."
+      - title: "I am an outreach co-chair for <a href='https://pi.math.cornell.edu/~awm/index.html'>Cornell AWM</a> and helped organize the 2023 and 2024 Cornell Julia Robinson Math Festivals"
       - title: "In 2022, I mentored research projects on data-driven recovery of Green's functions as part of the <a href='https://math.cornell.edu/history-reu-and-spur-summer-program-undergraduate-research-programs'>Cornell Summer REU</a>"
       - title: "I volunteer occasionally with the <a href='https://pi.math.cornell.edu/~zakh/little/'>Cornell Little Math Circle</a> and with the <a href='https://sites.google.com/cornell.edu/cornell-drp'>directed reading program</a>"
+
+  - title: links
+    entries:
+      - title: "<a href='https://www.ams.org/publications/journals/notices/201610/rnoti-p1164.pdf'>Todos Cuentan</a> by Federico Ardila, on representative mathematics pedagogy"
+      - title: "<a href='https://lgbtmath.org'>Spectra</a>, association for queer mathematicians"
+      - title: "<a href='https://inventati.org'>A/I</a>, autonomous tech & digitial rights collective"
 
   - title: miscellaneous
     url: misc
